@@ -1,3 +1,5 @@
+### Usage via npm
+
 `npm i` to download node__modules
 
 `npm start` to start the dev
