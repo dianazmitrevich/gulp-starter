@@ -1,0 +1,25 @@
+$base-font-size: 16px;
+
+@mixin ph {
+   @media (max-width: 700px) {
+      @content;
+   }
+}
+
+* {
+   box-sizing: border-box;
+}
+
+body {
+   font-size: $base-font-size;
+   font-family: Arial;
+   line-height: 1.5;
+   background: url("../img/ayfon-11-3840x2160-pro-22130.jpg") no-repeat / cover;
+
+   @include ph {
+      color: #fff;
+      background-color: #000;
+   }
+}
+
+@import "block/*.scss";
